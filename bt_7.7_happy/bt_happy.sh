@@ -45,15 +45,12 @@ echo -e "去除升级红点开始..."
 #判断index.html文件是否存在,存在删除之后再下载,不存在直接下载
 index_file="/www/server/panel/BTPanel/templates/default/index.html"
 if [ -f ${index_file} ];then
-    chattr -i /www/server/panel/BTPanel/templates/default/index.html
     rm /www/server/panel/BTPanel/templates/default/index.html
     cd /www/server/panel/BTPanel/templates/default
     wget https://proxy.zyun.vip/https://raw.githubusercontent.com/elunez/other_script/master/bt_7.7_happy/index.html
-    chattr +i /www/server/panel/BTPanel/templates/default/index.html
 else
     cd /www/server/panel/BTPanel/templates/default
     wget https://proxy.zyun.vip/https://raw.githubusercontent.com/elunez/other_script/master/bt_7.7_happy/index.html
-    chattr +i /www/server/panel/BTPanel/templates/default/index.html
 fi
 echo -e "去除升级红点结束."
 sleep 3
