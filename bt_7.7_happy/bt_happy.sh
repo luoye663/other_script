@@ -32,10 +32,15 @@ if [ -f ${plugin_file} ];then
     cd /www/server/panel/data
     wget https://proxy.zyun.vip/https://raw.githubusercontent.com/elunez/other_script/master/bt_7.7_happy/plugin.json
     chattr +i /www/server/panel/data/plugin.json
+    rm /www/server/panel/BTPanel/templates/default/soft.html
+    cd /www/server/panel/BTPanel/templates/default
+    wget https://proxy.zyun.vip/https://raw.githubusercontent.com/elunez/other_script/master/bt_7.7_happy/soft.html
 else
     cd /www/server/panel/data
     wget https://proxy.zyun.vip/https://raw.githubusercontent.com/elunez/other_script/master/bt_7.7_happy/plugin.json
     chattr +i /www/server/panel/data/plugin.json
+    cd /www/server/panel/BTPanel/templates/default
+    wget https://proxy.zyun.vip/https://raw.githubusercontent.com/elunez/other_script/master/bt_7.7_happy/soft.html
 fi
 sleep 3
 echo -e "去除升级红点开始..."
