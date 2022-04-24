@@ -33,8 +33,7 @@ if [ -f ${plugin_file} ];then
     wget https://proxy.zyun.vip/https://raw.githubusercontent.com/elunez/other_script/master/bt_7.7_happy/plugin.json
     chattr +i /www/server/panel/data/plugin.json
     # 去除软件商城广告
-    chattr -i /www/server/panel/BTPanel/templates/default/soft.html
-    rm /www/server/panel/BTPanel/templates/default/soft.html
+    rm -rf /www/server/panel/BTPanel/templates/default/soft.html
     cd /www/server/panel/BTPanel/templates/default
     wget https://proxy.zyun.vip/https://raw.githubusercontent.com/elunez/other_script/master/bt_7.7_happy/soft.html
     chattr +i /www/server/panel/BTPanel/templates/default/soft.html
