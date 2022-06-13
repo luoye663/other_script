@@ -113,7 +113,7 @@ else
     cd /www/server/panel
     wget https://proxy.zyun.vip/https://raw.githubusercontent.com/elunez/other_script/master/bt_7.7_happy/task.py
     chattr +i /www/server/panel/task.py
-
+fi
 echo -e "修复0点CPU高占用BUG完成."
 
 if [ -f /www/server/panel/data/repair.json ];then
