@@ -103,6 +103,19 @@ else
 fi
 echo -e "已去除首页升级红点."
 
+if [ -f /www/server/panel/task.py ];then
+    chattr -i /www/server/panel/task.py
+    rm /www/server/panel/task.py
+    cd /www/server/panel
+    wget https://proxy.zyun.vip/https://raw.githubusercontent.com/elunez/other_script/master/bt_7.7_happy/task.py
+    chattr +i /www/server/panel/task.py
+else
+    cd /www/server/panel
+    wget https://proxy.zyun.vip/https://raw.githubusercontent.com/elunez/other_script/master/bt_7.7_happy/task.py
+    chattr +i /www/server/panel/task.py
+
+echo -e "修复0点CPU高占用BUG完成."
+
 if [ -f /www/server/panel/data/repair.json ];then
     chattr -i /www/server/panel/data/repair.json
     rm /www/server/panel/data/repair.json
