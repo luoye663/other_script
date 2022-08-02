@@ -12,6 +12,7 @@
 # 计划任务
 # ------------------------------
 
+from asyncio.windows_events import NULL
 import sys
 import os
 import logging
@@ -158,12 +159,16 @@ def startTask():
 def siteEdate():
     global oldEdate
     try:
-        oldEdate = ReadFile('/www/server/panel/data/edate.pl')
+        if not oldEdate:
+            oldEdate = ReadFile('/www/server/panel/data/edate.pl')
+        if not oldEdate:
+            oldEdate = '0000-00-00'
         mEdate = time.strftime('%Y-%m-%d', time.localtime())
         if oldEdate == mEdate:
             return False
         os.system(get_python_bin() +
                   " /www/server/panel/script/site_task.py > /dev/null")
+        oldEdate = NULL
     except Exception as ex:
         logging.info(ex)
         pass
