@@ -158,6 +158,7 @@ def startTask():
 def siteEdate():
     global oldEdate
     try:
+        oldEdate = ReadFile('/www/server/panel/data/edate.pl')
         mEdate = time.strftime('%Y-%m-%d', time.localtime())
         if oldEdate == mEdate:
             return False
