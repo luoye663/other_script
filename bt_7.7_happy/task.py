@@ -158,14 +158,12 @@ def startTask():
 def siteEdate():
     global oldEdate
     try:
-        if not oldEdate:
-            oldEdate = ReadFile('/www/server/panel/data/edate.pl')
+        oldEdate = ReadFile('/www/server/panel/data/edate.pl')
         if not oldEdate:
             oldEdate = '0000-00-00'
         mEdate = time.strftime('%Y-%m-%d', time.localtime())
         if oldEdate == mEdate:
             return False
-        oldEdate = mEdate
         os.system("nohup " + get_python_bin() + " /www/server/panel/script/site_task.py > /dev/null 2>&1 &")
     except Exception as ex:
         logging.info(ex)
