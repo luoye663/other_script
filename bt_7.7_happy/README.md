@@ -7,7 +7,7 @@ wget -O bt_happy.sh https://proxy.zyun.vip/https://raw.githubusercontent.com/elu
 ### 安装宝塔 7.7
 
 ```bash
-wget -O install.sh https://proxy.zyun.vip/https://raw.githubusercontent.com/elunez/other_script/master/btpanel-v7.7.0/install/install_panel.sh && bash install.sh
+curl -sSO https://proxy.zyun.vip/https://raw.githubusercontent.com/elunez/other_script/master/btpanel-v7.7.0/install/install_panel.sh && bash install_panel.sh
 ```
 
 ### 宝塔降级到 7.7（适用centos）
