@@ -13,7 +13,7 @@ curl -sSO https://proxy.zyun.vip/https://raw.githubusercontent.com/elunez/other_
 ### 宝塔降级到 7.7（适用centos）
 
 ```bash
-wget https://proxy.zyun.vip/https://raw.githubusercontent.com/elunez/other_script/master/bt_7.7_happy/LinuxPanel-7.7.0.zip
+wget https://proxy.zyun.vip/https://raw.githubusercontent.com/elunez/other_script/master/btpanel-v7.7.0/install/src/LinuxPanel-7.7.0.zip
 unzip LinuxPanel-*
 cd panel
 bash update.sh
