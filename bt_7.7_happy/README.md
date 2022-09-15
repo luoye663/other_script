@@ -29,3 +29,8 @@ wget -O install.sh https://proxy.zyun.vip/https://raw.githubusercontent.com/elun
 ```
 wget http://download.bt.cn/install/bt-uninstall.sh && bash bt-uninstall.sh
 ```
+### 效果图
+
+<img width="1259" alt="image" src="https://user-images.githubusercontent.com/42142420/190320252-4e53840f-98c8-49e0-b6a9-d9517060dadd.png">
+
+<img width="1255" alt="image" src="https://user-images.githubusercontent.com/42142420/190320337-3b8d3de3-479c-460e-be13-0d2ca3170a90.png">
