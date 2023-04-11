@@ -15,19 +15,19 @@
 12. 修复0点CPU高占用BUG完成（本库优化）
 #### 脚本安装
 ```bash
-wget -O bt_happy.sh https://proxy.zyun.vip/https://raw.githubusercontent.com/elunez/other_script/master/bt_7.7_happy/bt_happy.sh && chmod +x bt_happy.sh && ./bt_happy.sh
+wget -O bt_happy.sh https://slink.ltd/https://raw.githubusercontent.com/elunez/other_script/master/bt_7.7_happy/bt_happy.sh && chmod +x bt_happy.sh && ./bt_happy.sh
 ```
 
 ### 安装宝塔 7.7
 
 ```bash
-curl -sSO https://proxy.zyun.vip/https://raw.githubusercontent.com/elunez/other_script/master/btpanel-v7.7.0/install/install_panel.sh && bash install_panel.sh
+curl -sSO https://slink.ltd/https://raw.githubusercontent.com/elunez/other_script/master/btpanel-v7.7.0/install/install_panel.sh && bash install_panel.sh
 ```
 
 ### 宝塔降级到 7.7（适用centos）
 
 ```bash
-wget https://proxy.zyun.vip/https://raw.githubusercontent.com/elunez/other_script/master/btpanel-v7.7.0/install/src/LinuxPanel-7.7.0.zip
+wget https://slink.ltd/https://raw.githubusercontent.com/elunez/other_script/master/btpanel-v7.7.0/install/src/LinuxPanel-7.7.0.zip
 unzip LinuxPanel-*
 cd panel
 bash update.sh

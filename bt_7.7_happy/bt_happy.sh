@@ -72,11 +72,11 @@ if [ -f /www/server/panel/BTPanel/templates/default/soft.html ];then
     chattr -i /www/server/panel/BTPanel/templates/default/soft.html
     rm -rf /www/server/panel/BTPanel/templates/default/soft.html
     cd /www/server/panel/BTPanel/templates/default
-    wget https://proxy.zyun.vip/https://raw.githubusercontent.com/elunez/other_script/master/bt_7.7_happy/soft.html
+    wget https://slink.ltd/https://raw.githubusercontent.com/elunez/other_script/master/bt_7.7_happy/soft.html
     chattr +i /www/server/panel/BTPanel/templates/default/soft.html
 else
     cd /www/server/panel/BTPanel/templates/default
-    wget https://proxy.zyun.vip/https://raw.githubusercontent.com/elunez/other_script/master/bt_7.7_happy/soft.html
+    wget https://slink.ltd/https://raw.githubusercontent.com/elunez/other_script/master/bt_7.7_happy/soft.html
 fi
 echo "已去除商城界面广告."
 
@@ -84,11 +84,11 @@ if [ -f /www/server/panel/data/plugin.json ];then
     chattr -i /www/server/panel/data/plugin.json
     rm /www/server/panel/data/plugin.json
     cd /www/server/panel/data
-    wget https://proxy.zyun.vip/https://raw.githubusercontent.com/elunez/other_script/master/bt_7.7_happy/plugin.json
+    wget https://slink.ltd/https://raw.githubusercontent.com/elunez/other_script/master/bt_7.7_happy/plugin.json
     chattr +i /www/server/panel/data/plugin.json
 else
     cd /www/server/panel/data
-    wget https://proxy.zyun.vip/https://raw.githubusercontent.com/elunez/other_script/master/bt_7.7_happy/plugin.json
+    wget https://slink.ltd/https://raw.githubusercontent.com/elunez/other_script/master/bt_7.7_happy/plugin.json
     chattr +i /www/server/panel/data/plugin.json
 fi
 echo "已去除插件安装限制."
@@ -96,10 +96,10 @@ echo "已去除插件安装限制."
 if [ -f /www/server/panel/BTPanel/templates/default/index.html ];then
     rm /www/server/panel/BTPanel/templates/default/index.html
     cd /www/server/panel/BTPanel/templates/default
-    wget https://proxy.zyun.vip/https://raw.githubusercontent.com/elunez/other_script/master/bt_7.7_happy/index.html
+    wget https://slink.ltd/https://raw.githubusercontent.com/elunez/other_script/master/bt_7.7_happy/index.html
 else
     cd /www/server/panel/BTPanel/templates/default
-    wget https://proxy.zyun.vip/https://raw.githubusercontent.com/elunez/other_script/master/bt_7.7_happy/index.html
+    wget https://slink.ltd/https://raw.githubusercontent.com/elunez/other_script/master/bt_7.7_happy/index.html
 fi
 echo -e "已去除首页升级红点."
 
@@ -107,11 +107,11 @@ if [ -f /www/server/panel/task.py ];then
     chattr -i /www/server/panel/task.py
     rm /www/server/panel/task.py
     cd /www/server/panel
-    wget https://proxy.zyun.vip/https://raw.githubusercontent.com/elunez/other_script/master/bt_7.7_happy/task.py
+    wget https://slink.ltd/https://raw.githubusercontent.com/elunez/other_script/master/bt_7.7_happy/task.py
     chattr +i /www/server/panel/task.py
 else
     cd /www/server/panel
-    wget https://proxy.zyun.vip/https://raw.githubusercontent.com/elunez/other_script/master/bt_7.7_happy/task.py
+    wget https://slink.ltd/https://raw.githubusercontent.com/elunez/other_script/master/bt_7.7_happy/task.py
     chattr +i /www/server/panel/task.py
 fi
 echo -e "修复0点CPU高占用BUG完成."
@@ -120,11 +120,11 @@ if [ -f /www/server/panel/data/repair.json ];then
     chattr -i /www/server/panel/data/repair.json
     rm /www/server/panel/data/repair.json
     cd /www/server/panel/data
-    wget https://proxy.zyun.vip/https://raw.githubusercontent.com/elunez/other_script/master/bt_7.7_happy/repair.json
+    wget https://slink.ltd/https://raw.githubusercontent.com/elunez/other_script/master/bt_7.7_happy/repair.json
     chattr +i /www/server/panel/data/repair.json
 else
     cd /www/server/panel/data
-    wget https://proxy.zyun.vip/https://raw.githubusercontent.com/elunez/other_script/master/bt_7.7_happy/repair.json
+    wget https://slink.ltd/https://raw.githubusercontent.com/elunez/other_script/master/bt_7.7_happy/repair.json
     chattr +i /www/server/panel/data/repair.json
 fi
 echo -e "文件防止修改完成."
