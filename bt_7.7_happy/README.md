@@ -17,7 +17,13 @@
 ```bash
 wget -O bt_happy.sh https://slink.ltd/https://raw.githubusercontent.com/elunez/other_script/master/bt_7.7_happy/bt_happy.sh && chmod +x bt_happy.sh && ./bt_happy.sh
 ```
-
+```bash
+<!--手动解锁宝塔所有付费插件为永不过期-->
+文件路径：www/server/panel/data/plugin.json
+搜索字符串："endtime": -1 全部替换为 "endtime": 999999999999
+<!--手动阻止解锁插件后自动修复为免费版-->
+chattr +i /www/server/panel/data/plugin.json
+```
 ### 安装宝塔 7.7
 
 ```bash
